@@ -1,36 +1,39 @@
-# 여러 변수 선언
+# 여러 변수 선언 (변수명 소문자 + 언더바로 구분)
 name = "hong"
 x, y = 7, 3
 x = y = 10 # 오른쪽부터 삽입
 
 
 
-# int
+# int (정수)
 print(1 + 2) # 3
 # float
 print(1 + 1.5) # 2.5
-# str
+# str (문자열)
 print("Hello" + "Python!")
+print(f"{name}")
+print(f"Hello, {name}!") # f-string
+print(f"{name = }")
+print(f"{name = }, {x = }, {y = }")
 
 
-
-# 원시 자료형
+# 원시 자료형 (int, float, str)
 score = 2030
 print(score) # 2030
 
 score = float(score) # 2030.0
 
-is_correct = True
+is_correct = True # boolean
 
 teacher_name = "hong jinwab"
-print(teacher_name[0]) # h
+print(teacher_name[0]) # h (문자열 인덱싱)
 print(teacher_name[-2]) # a
-print(teacher_name[5:9]) # jinw 인덱스 5부터 9 전까지 (즉, 5,6,7,8)
-print(teacher_name[5:]) # jinwab 인덱스 5부터 끝까지
-print(teacher_name[:5]) # hong  처음부터 인덱스 5 전까지 (즉, 0,1,2,3,4) (공백 포함)
-print(teacher_name[::2]) # hn iwb 처음부터 끝까지 2칸씩 건너뛰면서
-print(teacher_name[::-1]) # bawnij gnoh 전체 역순
-print(teacher_name[::-2]) # bwi nh 끝에서 두 칸씩 거꾸로 (시작은 무조건 -1부터)
+print(teacher_name[5:9]) # jinw 인덱스 5부터 9 전까지 (즉, 5,6,7,8) (문자열 슬라이싱)
+print(teacher_name[5:]) # jinwab 인덱스 5부터 끝까지 (문자열 슬라이싱)
+print(teacher_name[:5]) # hong  처음부터 인덱스 5 전까지 (즉, 0,1,2,3,4) (공백 포함) (문자열 슬라이싱)
+print(teacher_name[::2]) # hn iwb 처음부터 끝까지 2칸씩 건너뛰면서 (문자열 슬라이싱)
+print(teacher_name[::-1]) # bawnij gnoh 전체 역순 (문자열 슬라이싱)
+print(teacher_name[::-2]) # bwi nh 끝에서 두 칸씩 거꾸로 (시작은 무조건 -1부터) (문자열 슬라이싱)
 print(len(teacher_name)) # 11
 
 
