@@ -55,3 +55,32 @@ print(f"{squared_error3}")
 
 # ---
 # 12. 리스트와 len함수
+u = [1, 2, 3]
+v = [10, 20, 30]
+
+e_dist = ((u[0] - v[0])**2 + (u[1] - v[1])**2 + (u[2] - v[2])**2)**0.5
+print(f"Euclidean distance : {e_dist:.4f}")
+
+test_list = []
+print(len(test_list))
+
+test_list2 = [1]
+print(len(test_list2))
+
+test_list3 = [1, 2]
+print(len(test_list3))
+
+test_list4 = [1, 2, 3]
+print(len(test_list4))
+
+score = [10, 20, 30]
+score_mean = sum(score) / len(score)
+print(f"{score_mean = }")
+
+scores = [10, 20, 30]
+score_mean = sum(scores) / len(scores)
+score_squared_diff = [(scores[0] - score_mean)**2, 
+                      (scores[1] - score_mean)**2,
+                      (scores[2] - score_mean)**2]
+score_var = sum(score_squared_diff) / len(score_squared_diff)
+print(f"{score_var}")
